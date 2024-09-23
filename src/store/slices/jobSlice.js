@@ -115,7 +115,7 @@ export const getMyJobs = ()=>async(dispatch)=>{
     try
     {
         dispatch(jobSlice.actions.requestMyJobs())
-        const Link = `http://localhost:8080/api/v1/job/getmy`;
+        const Link = `https://jobportal-back-3.onrender.com/api/v1/job/getmy`;
         const response = await axios.get(Link,{
             withCredentials:true,
         })
@@ -131,7 +131,7 @@ export const getMyJobs = ()=>async(dispatch)=>{
 export const createJob = (data)=>async(dispatch)=>{
     try{
         dispatch(jobSlice.actions.requestCreateJob())
-        const Link = `http://localhost:8080/api/v1/job/create`;
+        const Link = `https://jobportal-back-3.onrender.com/api/v1/job/create`;
         const response = await axios.post(Link,data,{
             withCredentials:true,
             headers:{"Content-Type":"multipart/form-data"},
@@ -150,7 +150,7 @@ export const createJob = (data)=>async(dispatch)=>{
 export const deleteJob = (id)=>async(dispatch)=>{
     try{
         dispatch(jobSlice.actions.requestDeleteJob())
-        const Link = `http://localhost:8080/api/v1/job/delete/${id}`;
+        const Link = `https://jobportal-back-3.onrender.com/api/v1/job/delete/${id}`;
         const response = await axios.delete(Link,{
             withCredentials:true,
         })
@@ -168,7 +168,7 @@ export const deleteJob = (id)=>async(dispatch)=>{
 export const fetchJobs = (city,domain,keyword)=>async(dispatch)=>{
     try{
         dispatch(jobSlice.actions.requestForAllJobs());
-        let link = "http://localhost:8080/api/v1/job/getall?"
+        let link = "https://jobportal-back-3.onrender.com/api/v1/job/getall?"
         let queryParams = []
         if(keyword)
         {
@@ -198,7 +198,7 @@ export const fetchJobs = (city,domain,keyword)=>async(dispatch)=>{
 export const fetchSingleJob = (JobId)=>async(dispatch)=>{
     try{
          dispatch(jobSlice.actions.requestForSingleJob())
-         const Link = `http://localhost:8080/api/v1/job/getone/${JobId}`
+         const Link = `https://jobportal-back-3.onrender.com/api/v1/job/getone/${JobId}`
          const response = await axios.get(Link,{
             withCredentials:true
          })

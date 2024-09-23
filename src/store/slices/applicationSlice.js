@@ -95,7 +95,7 @@ export const applicationSlice = createSlice({
 export const fetchJobSeekerApplication = ()=>async(dispatch)=>{
     try{
         dispatch(applicationSlice.actions.requestForMyApplications());
-        const Link = `http://localhost:8080/api/v1/application/jobseeker/getall`;
+        const Link = `https://jobportal-back-3.onrender.com/api/v1/application/jobseeker/getall`;
         const response = await axios.get(Link,{
             withCredentials:true,
         })
@@ -112,7 +112,7 @@ export const fetchJobSeekerApplication = ()=>async(dispatch)=>{
 export const fetchEmployerApplication = ()=>async(dispatch)=>{
     try{
         dispatch(applicationSlice.actions.requestForMyApplications());
-        const Link = `http://localhost:8080/api/v1/application/employer/getall`;
+        const Link = `https://jobportal-back-3.onrender.com/api/v1/application/employer/getall`;
         const response = await axios.get(Link,{
             withCredentials:true,
         })
@@ -128,7 +128,7 @@ export const fetchEmployerApplication = ()=>async(dispatch)=>{
 export const deleteApplication = (id)=>async(dispatch)=>{
     try{
         dispatch(applicationSlice.actions.requestDeleteApplication())
-        const Link = `http://localhost:8080/api/v1/application/delete/${id}`;
+        const Link = `https://jobportal-back-3.onrender.com/api/v1/application/delete/${id}`;
         const response = await axios.delete(Link,{
             withCredentials:true,
         })
@@ -145,7 +145,7 @@ export const postApplication =(data,jobId)=>async(dispatch)=>{
         try{
             dispatch(applicationSlice.actions.requestForPostApplication());
             console.log("printing jobId in slice",jobId)
-            const Link = `http://localhost:8080/api/v1/application/post/${jobId}`;
+            const Link = `https://jobportal-back-3.onrender.com/api/v1/application/post/${jobId}`;
             const response = await axios.post(Link,data,{
                 withCredentials:true,
                 headers:{"Content-Type":"multipart/form-data"},

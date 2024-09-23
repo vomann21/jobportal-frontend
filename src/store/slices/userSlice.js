@@ -113,7 +113,7 @@ export const register = (data) =>async(dispatch)=>{
     dispatch(userSlice.actions.requestForRegister())
     try
     {
-        let link = "http://localhost:8080/api/v1/user/register";
+        let link = "https://jobportal-back-3.onrender.com/api/v1/user/register";
         const response = await axios.post(link,data,{
             withCredentials:true,
             headers:{"Content-Type":"multipart/form-data"},
@@ -137,7 +137,7 @@ export const clearAllUserErrors = ()=>(dispatch)=>{
 export const login = (data)=> async(dispatch)=>{
     try{
         dispatch(userSlice.actions.requestForLogin())
-        let link = "http://localhost:8080/api/v1/user/login"
+        let link = "https://jobportal-back-3.onrender.com/api/v1/user/login"
         const response = await axios.post(link,data,{
             withCredentials:true,
             headers:{"Content-Type":"application/json"},
@@ -157,7 +157,7 @@ export const login = (data)=> async(dispatch)=>{
 export const getUser = () =>async(dispatch)=>{
     try{
         dispatch(userSlice.actions.requestForUser());
-        const Link = `http://localhost:8080/api/v1/user/userdetails`;
+        const Link = `https://jobportal-back-3.onrender.com/api/v1/user/userdetails`;
 
         const response = await axios.get(Link,{
             withCredentials:true
@@ -177,7 +177,7 @@ export const getUser = () =>async(dispatch)=>{
 
 export const signOut = ()=>async(dispatch)=>{
       try{
-          const Link = `http://localhost:8080/api/v1/user/signout`;
+          const Link = `https://jobportal-back-3.onrender.com/api/v1/user/signout`;
 
           const response = await axios.get(Link,{
                withCredentials:true,
