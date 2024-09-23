@@ -1,0 +1,43 @@
+.update-btn-div{
+    margin-top: 1rem;
+}
+
+.update-btn{
+    background-color: skyblue;
+    width: 8rem;
+    height: 2rem;
+    border: none;
+    border-radius: 4px;
+}
+
+.update-btn:hover{
+    transform: translateY(-1px);
+}
+
+.update-btn:active{
+    background-color: rgb(20, 121, 161);
+}
+
+
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px; /* Adjust as needed */
+    width: 56%;
+}
+
+.input-container input {
+    width: 100%;
+    padding-right: 40px; /* To make space for the icon */
+    box-sizing: border-box;
+    height: 2.5rem;
+}
+
+.input-container .icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #666; /* Adjust icon color as needed */
+}

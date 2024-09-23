@@ -1,0 +1,44 @@
+.features{
+    background: linear-gradient(to right bottom,#cee15fca,#788907c6);
+    clip-path: polygon(0 20%,100% 0,100% 100%,0 100%);
+    padding: 10rem 0;
+    height: 60vh;
+    margin-top: -8rem;
+}
+
+.features .header{
+    display: block;
+    color: #fefefc;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.features .cards{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.cards .card{
+    background-color: #fefefc;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 25rem;
+    border-radius: 5px;
+    box-shadow: 1rem 1rem 0.5rem rgba(0, 0, 0, 0.25);
+}
+
+
+.card-img{
+    width: 100%;
+    clip-path: polygon(0 0,100% 0,100% 80%,0 100%);
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+}
+
+.card .information{
+    font-size: 1.2rem;
+    color: #788907c6;
+    padding: 1rem;
+}

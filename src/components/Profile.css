@@ -1,0 +1,71 @@
+.dashboard-textarea{
+    margin: auto;
+    width: 100%;
+    resize: vertical;
+}
+
+
+.application .title-logo-img{
+     width: 50px;
+     border-radius: 50%;
+}
+
+.application .title-logo{
+     display: flex;
+}
+
+.application .title-logo .name{
+    margin-left: 1rem;
+}
+
+.application{
+    margin-bottom: 3rem;
+    background-color: white;
+    box-shadow: 1px 1px 2px black;
+    padding: 10px;
+    margin-right: 3rem;
+}
+
+.end-area{
+    display: flex;
+    justify-content: space-between;
+}
+
+.end-area .icon{
+    margin-top: 1.3rem;
+    font-size: 1.3rem;
+    color: red;
+}
+
+.end-area .icon:hover{
+    color:rgb(154, 32, 32);
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.info textarea{
+    display: block;
+    width: 98%;
+    resize: vertical;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.info a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: skyblue;
+    margin-top: 1rem;
+    width: 70px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.info a:active{
+    background-color: rgb(29, 106, 137);
+}

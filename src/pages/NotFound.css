@@ -1,0 +1,22 @@
+.not-found{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.content-1{
+    font-size: 5rem;
+    color: #7a8726;
+}
+
+.content-2{
+    font-size: 2rem;
+}
+
+.not-found button{
+    margin-top: 1rem;
+    padding: 8px;
+    background-color: #7a8726;
+}

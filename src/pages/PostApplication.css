@@ -1,0 +1,63 @@
+.application-form input{
+    height: 2rem;
+    width: 100%;    
+}
+
+.application-form{
+    width: 56%;
+}
+
+.application-form .btn{
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    border: none;
+    background-color: rgb(51, 135, 209);
+    color: white;
+    border-radius: 5px;
+    
+}
+
+.btn:hover{
+    transform: translateY(-1px);
+}
+
+.btn:active{
+    transform: translateY(1px);
+}
+
+.application-form textarea{
+    margin: auto;
+    width: 100%;
+    resize: vertical;
+}
+
+.job-details{
+    width: 40%;
+}
+
+.application-form .heading{
+    font-size: 1.4rem;
+}
+
+.job-application{
+   display: flex;
+   justify-content: space-between;
+}
+
+
+
+.about-1 div{
+    margin-bottom: 8px;
+    margin-top: 8px;    
+}
+
+.about-2 div{
+    margin-bottom: 8px;
+    margin-top: 8px;    
+}
+
+.about-3 div{
+    margin-bottom: 8px;
+    margin-top: 8px;    
+}

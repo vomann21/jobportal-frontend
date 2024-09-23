@@ -1,0 +1,79 @@
+body{
+    margin:1rem;
+}
+
+.hero{
+    position: relative;
+}
+
+.hero-background
+{
+    height: 70vh;
+    clip-path: polygon(0 0,100% 0,100% 80%,0 100%);
+    background: linear-gradient(to right bottom,#e0f085ca,#8ca00ac6),url('../../public/images/hero-background-img3.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center;  /* vertically centers the content */
+    position: relative;
+}
+
+.hero-background .content{
+    text-align: center;
+    color: white;
+}
+
+.hero .content div{
+    font-size: 3rem;
+    font-weight: 2rem;
+}
+
+/*about section...................*/
+.about{
+    background-color: rgba(250, 247, 247, 0.259);
+    padding: 10rem 0;
+    margin-top: -9rem;
+    height: 30vh;
+}
+
+.about .matter{
+    font-size: 1.2rem;
+    color: #8ca00a;
+    margin: 0rem 3rem 0 3rem;
+}
+
+.about p{
+    margin-bottom: 1rem;
+}
+
+.about li{
+    margin-bottom: 0.7rem;
+}
+
+.about .heading{
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+    color: #8ca00a;
+}
+
+
+
+.hero-navbar{
+    position: absolute;
+    right:0;
+    top:10px;
+}
+
+.nav-link{
+    margin: 1rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-link:hover{
+    color: rgb(44, 43, 43);
+}

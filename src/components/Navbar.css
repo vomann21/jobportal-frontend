@@ -1,0 +1,11 @@
+.navbar{
+    display: flex;
+    background: linear-gradient(to right bottom,#e0f085ca,#8ca00ac6),url('../../public/images/hero-background-img3.jpg');
+    background-size: cover;
+    color: white;
+    background-position: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    min-width: 50%;
+}
+

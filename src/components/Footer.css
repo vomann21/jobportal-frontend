@@ -1,0 +1,44 @@
+.footer{
+    background-color: rgba(18, 18, 18, 0.991);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.support div{
+    margin: 1rem;
+}
+
+.heading{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.quickLinks .heading{
+    margin-top: 1rem;
+}
+
+.quickLinks .link{
+    display: block;
+    margin: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+.followUs div{
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.icon{
+    padding-right: 5px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+}
+
+.card .information{
+    margin-bottom: 8rem;
+}

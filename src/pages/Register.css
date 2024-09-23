@@ -1,0 +1,124 @@
+.form-header{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+input,select{
+    padding:4px;
+}
+
+.register-body{
+    background:linear-gradient(to right bottom,rgb(163, 245, 63),green);
+}
+
+.register-form{
+    display: flex;
+    justify-content: center;
+}
+
+
+label{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.role-label{
+    margin-top: 20px;
+}
+
+.radio-label{
+    display: inline;
+    margin-top: 1rem;
+}
+
+.radio-input{
+    width:1rem;
+    margin-top:1rem;
+}
+
+.radio{
+    display: inline;
+    margin: 1rem;
+    margin-top: 2rem;
+}
+
+.domain-label{
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+
+select{
+    margin: 1rem;
+    display: block;
+}
+.resume{
+    color:#7a8726
+}
+
+.cover-letter{
+    width: 150%;
+    height: 5rem;
+    resize: vertical;
+}
+
+.registration-button{
+    margin-top: 2rem;
+    display:flex;
+    justify-content: center;
+}
+
+.login-button{
+    margin-top: 1rem;
+    display:flex;
+    justify-content: center;
+}
+
+.registration-button button{
+    padding:7px;
+    padding-left:10px;
+    padding-right: 10px;
+    width: 8rem;
+    background-color: #7a8726;
+    border: none;
+    border-radius: 5px;
+}
+
+textarea{
+    margin-left: -5rem;
+}
+
+.login-button button{
+    background-color: rgb(56, 176, 219);
+    padding:7px;
+    padding-left:10px;
+    padding-right: 10px;
+    width: 8rem;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.inpu-container {
+    position: relative;
+    margin-bottom: 20px; /* Adjust as needed */
+    width: 100%;
+}
+
+.inpu-container input {
+    width: 100%;
+    padding: 4px; /* To make space for the icon */
+    box-sizing: border-box;
+    height: 32px;
+}
+
+.inpu-container .icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #666; /* Adjust icon color as needed */
+}
