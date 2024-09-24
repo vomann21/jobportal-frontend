@@ -61,7 +61,7 @@ export const profileUpdate=(data)=>async(dispatch)=>{
     try{
         console.log("The data is",data)
         dispatch(updateSlice.actions.requestUpdateProfile())
-        const Link = `https://jobportal-back-3.onrender.com/api/v1/user/update/profile`;
+        const Link = `https://jobportal-back-4.onrender.com/api/v1/user/update/profile`;
         const response = await axios.put(Link,data,{
             withCredentials:true,
             headers:{"Content-Type":"multipart/form-data"},
@@ -81,7 +81,7 @@ export const updatePassword = (data)=>async(dispatch) =>{
     try{
         console.log(data)
         dispatch(updateSlice.actions.requestUpdatePassword())
-        const Link = `https://jobportal-back-3.onrender.com/api/v1/user/update/password`;
+        const Link = `https://jobportal-back-4.onrender.com/api/v1/user/update/password`;
         const response = await axios.put(Link,data,{
             withCredentials:true,
         })
